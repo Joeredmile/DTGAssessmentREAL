@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cs6nnedeyp5dw"]
+
+[ext_resource type="Script" uid="uid://kd6hf3q7x44c" path="res://script/basketball.gd" id="1_al20g"]
+[ext_resource type="Texture2D" uid="uid://dw0eb1qrjpeyd" path="res://assets/Basketball ball singular.png" id="2_wa7ic"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wa7ic"]
+
+[node name="basketball" type="Area2D" unique_id=549381688]
+script = ExtResource("1_al20g")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1826198788]
+position = Vector2(-3.8146973e-06, 2.0000076)
+scale = Vector2(0.99, 0.967)
+texture = ExtResource("2_wa7ic")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1917791084]
+shape = SubResource("CircleShape2D_wa7ic")
