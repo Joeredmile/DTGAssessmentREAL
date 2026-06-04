@@ -1,3 +1,23 @@
 [gd_scene format=3 uid="uid://birdimyu6r85b"]
 
+[ext_resource type="Script" uid="uid://bwhktgb4gh0tq" path="res://scenes/options.gd" id="1_c2u1v"]
+
 [node name="options" type="Node2D" unique_id=1957679180]
+script = ExtResource("1_c2u1v")
+
+[node name="Button" type="Button" parent="." unique_id=1595690618]
+offset_left = 430.0
+offset_top = 203.0
+offset_right = 662.0
+offset_bottom = 265.0
+text = "Yo this is options fr"
+
+[node name="Button2" type="Button" parent="." unique_id=29106518]
+offset_left = 430.0
+offset_top = 282.0
+offset_right = 662.0
+offset_bottom = 344.0
+text = "Back to menu
+"
+
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
